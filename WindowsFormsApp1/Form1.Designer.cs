@@ -24,13 +24,36 @@ namespace WindowsFormsApp1 {
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent() {
-			this.components = new System.ComponentModel.Container();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.SuspendLayout();
+			// 
+			// textBox1
+			// 
+			this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.textBox1.Location = new System.Drawing.Point(12, 52);
+			this.textBox1.Multiline = true;
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(527, 334);
+			this.textBox1.TabIndex = 0;
+			// 
+			// Form1
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(551, 398);
+			this.Controls.Add(this.textBox1);
+			this.Name = "Form1";
+			this.Text = "Drag Drop Files To TextBox";
+			this.ResumeLayout(false);
+			this.PerformLayout();
+
 		}
 
 		#endregion
+
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }
 
